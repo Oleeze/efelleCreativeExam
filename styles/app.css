@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.FixedTop,
+.homepage-slider,
+.our-services,
+.section {
+  padding: 0 10%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a,
+p {
+  font-family: "Roboto";
+  color: #333;
+}
+
+h5 {
+  font-family: "Architects Daughter";
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  font-size: smaller;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.nav-logo {
+  flex: 2;
+  max-height: 75px;
+}
+.nav-logo img {
+  height: 100%;
+}
+
+.header-right {
+  flex: 3;
+  display: flex;
+  margin: auto 0;
+}
+
+.FixedTop {
+  background-image: url("../images/header-bg.jpeg");
+  position: sticky;
+  top: 0;
+}
+
+li:hover {
+  text-decoration: underline;
+  color: #2e3d4d;
+}
+
+.homepage-slider {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/banner.jpg");
+  background-size: cover;
+}
+
+.our-services {
+  background-image: url("../images/woodgrain-bg.jpeg");
+}
+
+.header-phone-number {
+  text-align: right;
+}
+
+.efelle-dropdown {
+  margin: 0 5%;
+}
+
+.hamburger {
+  background-color: gray;
+  width: 48px;
+  height: 48px;
+  align-content: center;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background: #cdcdcd;
+  border-radius: 3px;
+}
+
+.hamburger span:last-of-type {
+  margin-bottom: 0;
+}
+
+.menu-hidden {
+  display: none;
+}
+
+.menu-show {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: aqua;
+  }
+}

@@ -20,10 +20,15 @@
       href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&family=Teko:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.google.com/specimen/Teko" rel="stylesheet" />
+    <link href="https://fonts.google.com/specimen/Roboto" rel="stylesheet" />
+    <link
+      href="https://fonts.google.com/specimen/Architects+Daughter"
+      rel="stylesheet"
+    />
   </head>
   <body id="frontpage" class="home">
     <div id="page">
-      <img alt="Print Logo" class="print-logo" src="graphics/logo.png" />
       <header class="FixedTop">
         <a id="top"></a>
         <div class="wrapper">
@@ -38,7 +43,14 @@
               <p>866.396.7520</p>
             </div>
             <nav class="efelle-dropdown main-mnu">
-              <ul class="efelle-menu">
+              <div class="hamburger" onclick="toggleNav()">
+                <div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <ul id="hamNav" class="menu-hidden">
                 <li>
                   <a
                     href="about.html"
@@ -92,66 +104,12 @@
             </nav>
           </div>
         </div>
-
-        <nav id="mmenu-noslide" class="no-fouc">
-          <ul class="efelle-menu">
-            <li>
-              <a href="about.html" class="first" target="_self" title="About"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="service/our-services.html"
-                target="_self"
-                title="Services"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a href="portfolio.html" target="_self" title="Portfolio"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a href="blog/jared-lewis-blog.html" target="_self" title="Blog"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a href="testimonial.html" target="_self" title="Reputation"
-                >Reputation</a
-              >
-            </li>
-            <li>
-              <a href="contact-us.html" target="_self" title="Contact Us"
-                >Contact Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="client-login.html"
-                class="last"
-                target="_self"
-                title="Client Login"
-                >Client Login</a
-              >
-            </li>
-          </ul>
-        </nav>
       </header>
 
       <div class="homepage-slider">
         <!-- Homepage Masthead -->
 
-        <section
-          class="homepage-masthead"
-          style="
-            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-              url('images/banner.jpg');
-            background-size: cover;
-          "
-        >
+        <section class="homepage-masthead">
           <div class="wrapper">
             <div class="text">
               <h5></h5>
@@ -342,6 +300,18 @@
         </div>
       </footer>
       <script>
+        //Toggle nav menue on mobile
+        var toggleNav = function () {
+          console.log("Hello");
+          var x = document.getElementById("hamNav");
+          console.log(x);
+          if (x.className.match === "menu-hidden") {
+            x.className = "menu-show";
+          } else {
+            x.className = "menu-hidden";
+          }
+        };
+
         // Automatically generate copyright year
         var $year = new Date().getFullYear();
         var $copy = "&copy; " + $year + " ";
