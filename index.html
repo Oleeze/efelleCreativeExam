@@ -30,11 +30,7 @@
   <body id="frontpage" class="home">
     <div id="page">
       <header class="FixedTop">
-        <a id="top"></a>
         <div class="wrapper">
-          <a id="nav-toggle" href="index.html#mmenu-noslide">
-            <span></span>
-          </a>
           <a class="nav-logo" href="index.html">
             <img alt="" src="images/efelle.png" />
           </a>
@@ -112,17 +108,11 @@
         <section class="homepage-masthead">
           <div class="wrapper">
             <div class="text">
-              <h5></h5>
-
-              <h5>Outstanding Quality</h5>
+              <h1>Outstanding Quality</h1>
 
               <h2>Vision</h2>
-
-              <p>
-                <span style="color: #ffffff"
-                  >We Capture and bring your remodeling ideas to life.</span
-                >
-              </p>
+              <hr style="width: 5vw; margin: auto 0" />
+              <p>We Capture and bring your remodeling ideas to life.</p>
 
               <p><a href="contact-us.html">Enquire</a></p>
             </div>
@@ -300,17 +290,11 @@
         </div>
       </footer>
       <script>
-        //Toggle nav menue on mobile
-        var toggleNav = function () {
-          console.log("Hello");
-          var x = document.getElementById("hamNav");
-          console.log(x);
-          if (x.className.match === "menu-hidden") {
-            x.className = "menu-show";
-          } else {
-            x.className = "menu-hidden";
-          }
-        };
+        // window.addEventListener("resize", () => {
+        //   // We execute the same script as before
+        //   let vh = window.innerHeight * 0.01;
+        //   document.documentElement.style.setProperty("--vh", `${vh}px`);
+        // });
 
         // Automatically generate copyright year
         var $year = new Date().getFullYear();
