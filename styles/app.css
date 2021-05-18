@@ -24,6 +24,8 @@ h5 {
   font-family: "Architects Daughter";
 }
 
+/* NavBar */
+
 ul {
   list-style: none;
   display: flex;
@@ -125,6 +127,8 @@ li:hover {
   height: 100%;
 }
 
+/* Main */
+
 .wrapper {
   display: flex;
   padding: 0 10%;
@@ -173,4 +177,45 @@ li:hover {
   body {
     background-color: aqua;
   }
+}
+
+/* Content */
+
+.our-services {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+
+.section {
+  background: #222427;
+  color: white;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.address-and-copy {
+  flex: 1;
+}
+
+.phone-and-design {
+  text-align: right;
+}
+
+.copy {
+  font-size: x-small;
+}
+
+.copy p {
+  color: lightgrey;
+}
+
+.copy a {
+  color: #446286;
+  text-transform: none;
 }
