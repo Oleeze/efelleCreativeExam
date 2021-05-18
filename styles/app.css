@@ -219,3 +219,11 @@ li:hover {
   color: #446286;
   text-transform: none;
 }
+
+.footer-social-icons {
+  display: flex;
+}
+
+.footer-social-icons a {
+  flex: 1;
+}
